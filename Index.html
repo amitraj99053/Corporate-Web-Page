@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corporate Web Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="left-frame">
+        <ul>
+            <li onclick="openPage('home.html')">Home</li>
+            <li onclick="openPage('about.html')">About Us</li>
+            <li onclick="openPage('services.html')">Services</li>
+            <li onclick="openPage('contact.html')">Contact Us</li>
+        </ul>
+    </div>
+    <div class="right-frame">
+        <iframe id="contentFrame" src="home.html"></iframe>
+    </div>
+
+    <script>
+        function openPage(pageName) {
+            document.getElementById("contentFrame").src = pageName;
+        }
+    </script>
+</body>
+</html>
